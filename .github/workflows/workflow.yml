@@ -1,0 +1,18 @@
+
+# File: .github/workflows/workflow.yml
+
+on: [push]
+jobs:
+  build:
+    name: copy files to azure storage
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: "3.1.x"
+      - uses: lauchacarro/Azure-Storage-Action@v1.0
+        with:
+          enabled-static-website: "true"
+          folder: "src/Thinking/Web"
+          connection-string: ${{ secrets.CONNECTION_STRING }}
