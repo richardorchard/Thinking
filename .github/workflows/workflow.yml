@@ -14,5 +14,5 @@ jobs:
       - uses: lauchacarro/Azure-Storage-Action@v1.0
         with:
           enabled-static-website: "true"
-          folder: "src/Thinking/Web"
+          folder: "src/Thinking.Web"
           connection-string: ${{ secrets.CONNECTION_STRING }}
