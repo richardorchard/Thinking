@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Thinking.Model
+namespace Thinking.Core
 {
     public class Category
     {

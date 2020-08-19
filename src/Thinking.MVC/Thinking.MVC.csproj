@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Thinking.Core\Thinking.Core.csproj" />
+    <ProjectReference Include="..\Thinking.Data\Thinking.Data.csproj" />
+  </ItemGroup>
+
 </Project>

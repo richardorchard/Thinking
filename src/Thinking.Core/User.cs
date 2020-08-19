@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Thinking.Model
+namespace Thinking.Core
 {
     public class User
     {
