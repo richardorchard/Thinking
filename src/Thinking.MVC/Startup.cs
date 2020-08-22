@@ -25,7 +25,7 @@ namespace Thinking.MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddScoped<IDeckData, InMemoryDeckData>();
+            services.AddSingleton<IDeckData, InMemoryDeckData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

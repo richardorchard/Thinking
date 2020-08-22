@@ -34,8 +34,6 @@ namespace Thinking.Data
             newDeck.Id = decks.Max(d => d.Id) + 1;
             return newDeck;
 
-
-
         }
 
         public int Commit()
